@@ -1,0 +1,20 @@
+AIM:A PYTHON PROGRAM TO FIND THE NUMBER OF WORDS IN A STRING
+
+str=input("enter a string")
+i=c=0
+flag=True
+for s in str:
+    if flag==False and str[i]==" ":
+        c+=1
+    if str[i]==" ":
+        flag=True
+    else:
+        flag=False
+    i+=1
+print("number of words :",c+1)
+OUTPUT AND INPUT:
+
+INPUT:
+    enter a string:vemula keerthana
+OUTPUT:    
+    number of words : 2

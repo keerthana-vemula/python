@@ -1,0 +1,22 @@
+AIM:A PYTHON PROGRAM TO SORT A GROUP OF STRINGS INTO ALPHABETICAL ORDER
+str=[]
+n=int(input("how many strings:"))
+for i in range(n):
+    print("enter string:",end=" ")
+    str.append(input())
+str.sort()
+str1=sorted(str)
+print("sorted list:")
+for i in str1:
+    print(i)
+"""
+OUTPUT:
+how many strings:3
+enter string: raji
+enter string: keerthi
+enter string: sandy
+SORTED LIST:
+keerthi
+raji
+sandy
+"""

@@ -1,0 +1,33 @@
+AIM:A PYTHON PROGRAM TO CREATE A LIST WITH EMPLOYEE DATA AND THEN RETRIEVE A PARTICULAR EMPLOYEE DETAILS
+
+emp=[]
+n=int(input("enter  how many employees"))
+for i in range(n):
+    print("enter id:",end=" ")
+    emp.append(int(input()))
+    print("enter name:",end=" ")
+    emp.append((input()))
+    print("enter the salary:",end=" ")
+    emp.append(float(input()))
+print("the list is created with the employee data")
+id=int(input("enter the id:"))
+for i in range(len(emp)):
+    if id==emp[i]:
+        print("id={:d},name={:s},salary={:.2f}".format(emp[i],emp[i+1],emp[i+2]))
+        break
+"""
+OUTPUT:
+enter  how many employees3
+enter id: 123
+enter name: KEERTHI
+enter the salary: 12000
+enter id: 124
+enter name: RAJI
+enter the salary: 13000
+enter id: 125
+enter name: SANDY
+enter the salary: 12900
+the list is created with the employee data
+enter the id:123
+id=123,name=KEERTHI,salary=12000.00
+"""

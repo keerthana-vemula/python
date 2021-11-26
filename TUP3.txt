@@ -1,0 +1,15 @@
+AIM:A PYTHON PROGRAM TO SORT A TUPLE AS ELEMENTS
+
+emp=((10,"satwika",11500),(12,"keerthi",12000),(16,"sandy",13000),(18,"raji",12500))
+print(sorted(emp))
+print(sorted(emp,reverse=True))
+print(sorted(emp,key=lambda x: x[1]))
+print(sorted(emp,key=lambda x:x[2]))
+
+"""
+OUTPUT :
+    [(10, 'satwika', 11500), (12, 'keerthi', 12000), (16, 'sandy', 13000), (18, 'raji', 12500)]
+    [(18, 'raji', 12500), (16, 'sandy', 13000), (12, 'keerthi', 12000), (10, 'satwika', 11500)]
+    [(12, 'keerthi', 12000), (18, 'raji', 12500), (16, 'sandy', 13000), (10, 'satwika', 11500)]
+    [(10, 'satwika', 11500), (12, 'keerthi', 12000), (18, 'raji', 12500), (16, 'sandy', 13000)] 
+"""

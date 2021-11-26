@@ -1,0 +1,29 @@
+AIM:A PYTHON PROGRAM TO SEARCH FOR THE POSITION OF A STRING IN A GIVEN GROUP OF STRINGS 
+
+str=[]
+n=int(input("how many strings"))
+for i in range(n):
+    print("enter string:",end=" ")
+    str.append(input())
+s=input("enter string to search:")
+flag=False
+for i in range(len(str)):
+    if s==str[i]:
+        print("found at :",i+1)
+        flag=True
+    if flag==False:
+        print("not found")
+"""
+OUTPUT AND INPUT:
+
+INPUT:
+how many strings:5
+OUTPUT:
+enter string: keerthi
+enter string: sandy
+enter string: deepthi
+enter string: raji
+enter string: satwika
+enter string to search:keerthi
+found at : 1
+        

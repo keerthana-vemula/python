@@ -1,0 +1,21 @@
+
+AIM:A PYTHON PROGRAM FROM KEYBOARD INTO THE TUPLE AND FINDING ELEMENTS IN A TUPLE
+
+str=input("enter elements from keyboard as string seperated by commas: ").split(",")
+lst=[int(num) for num in str]
+tup=tuple(lst)
+print("the tuple is:",tup)
+ele=int(input("enter an element to search: "))
+try:
+    pos=tup.index(ele)
+    print("element position no: ",pos+1)
+except ValueError:
+    print("element not found in tuple")
+
+"""
+OUTPUT:
+enter elements from keyboard as string seperated by commas: 19,21,15,13
+The tuple is: (19, 21, 15, 13)
+Enter an element to search: 19
+Element position no:  1
+"""

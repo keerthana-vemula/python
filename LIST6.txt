@@ -1,0 +1,30 @@
+AIM:A PYTHON PROGRAM TO KNOW HOW MANY TIMES AN ELEMENT OCCURED IN THE LIST
+x=[]
+a=int(input("how many  elements?"))
+for i in range(a):
+    print("enter the elements:",end=" ")
+    x.append(int(input()))
+print("the list is:",x)
+c=int(input("enter the c number"))
+n=x.count(c)
+print("the number of times c found in the list x:",n)
+"""
+OUTPUT:
+how many  elements?6
+enter the elements: 1
+enter the elements: 2
+enter the elements: 12
+enter the elements: 19
+enter the elements: 19
+enter the elements: 13
+the list is: [1, 2, 12, 19, 19, 13]
+enter the c number19
+the number of times c found in the list x: 2
+"""
+
+
+
+
+
+
+      

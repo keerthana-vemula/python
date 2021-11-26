@@ -1,0 +1,13 @@
+AIM:A PYTHON PROGRAM TO RETRIVE KEYS VALUES AND KEY-VALUES PAIR FORM A DICTIONARY
+dict={"name":"keerthi","id":19121,"salary":100000}
+print(dict)
+print("keys in dict=",dict.keys())
+print("values in dict=",dict.values())
+print("items in dict=",dict.items())
+"""
+OUTPUT:
+{'name': 'keerthi', 'id': 19121, 'salary': 100000}
+keys in dict= dict_keys(['name', 'id', 'salary'])
+values in dict= dict_values(['keerthi', 19121, 100000])
+items in dict= dict_items([('name', 'keerthi'), ('id', 19121), ('salary', 100000)])
+"""

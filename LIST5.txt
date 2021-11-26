@@ -1,0 +1,34 @@
+AIM:A PYTHON PROGRAM TO SORT THE LIST ELEMENTS USING BUBBLE SORT TECHNIQUE
+
+x=[]
+print("how many elements",end=" ")
+n=int(input())
+for i in range(n):
+    print("enter elements",end=' ')
+    x.append(int(input()))
+print('original list: ',x)
+flag=False
+for i in range(n-1):
+    for j in range (n-1-i):
+        if x[j]>x[j+1]:
+           t=x[j]
+           x[j]=x[j+1]
+           x[j+1]=t
+           flag==True
+    if flag==False:
+        break
+    else:
+        flag=False
+        
+print("sorted list:",x)
+
+"""
+OUTPUT:
+How many elements 5
+enter elements 1
+enter elements 4
+enter elements 3
+enter elements 2
+enter elements 5
+original list:  [1, 4, 3, 2, 5]
+sorted list: [1, 3, 2, 4, 5]

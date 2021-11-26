@@ -1,0 +1,24 @@
+ AIM:A PYTHON PROGRAM TO PERFORM ALL STRING OPERATIONS
+
+s="hello goodbye"
+print(len(s))
+print(s.count("0"))
+print(s+"!!")
+print(s[6])
+print(s.index("b"))
+print(min(s))
+print(s[6:10])
+print('a'in s)
+print(max(s))
+"""
+OUTPUT:
+13
+0
+hello goodbye!!
+g
+10
+ 
+good
+False
+y
+"""

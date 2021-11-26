@@ -1,0 +1,17 @@
+AIM:A PYTHON PROGRAM TO ACCEPT ELEMENTS IN THE FORM OF A TUPLE AND DISPLAY THEIR SUM AND AVERAGE
+
+num=eval(input("enter elements in (): "))
+sum=0
+n=len(num)
+for i in range(n):
+    sum+=num[i]
+print("sum of numbers: ",sum)
+print("average of numbers:",sum/n)
+"""
+OUTPUT AND INPUT:
+    INPUT:
+        Enter Elements in (): 12,13,19,13,14,15
+    OUTPUT:
+        sum of numbers:  86
+        average of numbers: 14.33333
+"""        

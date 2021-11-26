@@ -1,0 +1,11 @@
+AIM:A PYTHON PROGRAM TO CREATE A DICTIONARY WITH EMPLOYEE DETAILS AND RETRIVE THE VALUES UPON GIVING THE KEYS
+dict={"name":"keerthi","id":19121,"salary":100000}
+print("name of the employee=",dict["name"])
+print("id of an employee=",dict["id"])
+print("salary if an employee=",dict["salary"])                                
+"""
+output:
+name of the employee= keerthi
+id of an employee= 19121
+salary if an employee= 100000
+"""

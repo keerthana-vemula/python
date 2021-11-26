@@ -1,0 +1,12 @@
+AIM:A PYTHON PROGRAM TO SORT THE ELEMENTS OF A DICTIONARY BASED ON A KEY OR VALUE
+
+colours={10:"red",15:"BLUE",5:"black"}
+c1=sorted(colours.items(),key=lambda t:t[0])
+print(c1)
+c2=sorted(colours.items(),key=lambda t:t[1])
+print(c2)
+"""
+OUTPUT:
+[(5, 'black'), (10, 'red'), (15, 'BLUE')]
+[(15, 'BLUE'), (5, 'black'), (10, 'red')]
+"""

@@ -1,0 +1,27 @@
+AIM:A PYTHON PROGRAM TO FIND MAXIMUM AND MINIMUM ELEMENTS IN A LIST OF ELEMENTS
+x=[]
+print("how many elements",end=" ")
+n=int(input())
+for i in range(n):
+    print("enter element:",end=" ")
+    x.append(int(input()))
+print("the list is:",x)
+big=x[0]
+small=x[0]
+for i in range(1,n):
+    if x[i]>big: big=x[i]
+    if x[i]<small: small=x[i]
+print("maximun is:",big)
+print("minimum is:",small)
+"""
+OUTPUT:
+how many elements 5
+enter element: 12
+enter element: 56
+enter element: 34
+enter element: 25
+enter element: 67
+the list is: [12, 56, 34, 25, 67]
+maximun is: 67
+minimum is: 12
+"""

@@ -1,0 +1,27 @@
+AIM:A PYTHON PROGRAM TO INSERT A SUB STRING IN A PARTICULAR POSITION
+
+str=input("enter a string:")
+sub=input("enter a sub string:")
+n=int(input("enter position number:"))
+n-=1
+l1=len(str)
+l2=len(sub)
+str1=[]
+for i in range(n):
+    str1.append(str[i])
+for i in range(l2):
+    str1.append(sub[i])
+for i in range(n,l1):
+    str1.append(str[i])
+str1=" ".join(str1)
+print(str1)
+"""
+INPUT AND OUTPUT:
+
+INPUT:
+enter a string:IT IS WINTER
+enter a sub string:TOO COOL
+enter position number:7
+OUTPUT:
+I T   I S   T O O   C O O L W I N T E R
+"""

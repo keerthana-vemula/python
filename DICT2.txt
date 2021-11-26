@@ -1,0 +1,18 @@
+AIM:WRITE A PROGRAM TO COUNT THE NUMBERS OF CHARACTERS IN THE STRING AND STORE THEM IN A DICTIONARY DATA STRUCTURE
+
+word=input("enter a word:")
+letterdict={}
+for letter in word:
+    letterdict[letter]=0
+for letter in word:
+    letterdict[letter]+=1
+print(letterdict)
+"""
+input and output:
+input:
+
+enter a word:keerthana
+output:
+
+{'k': 1, 'e': 2, 'r': 1, 't': 1, 'h': 1, 'a': 2, 'n': 1}
+"""

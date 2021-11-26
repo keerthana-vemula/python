@@ -1,0 +1,43 @@
+AIM:A PYTHON PROGRAM TO CREATE A DICTIONARY WITH CRICKET PLAYERS NAMES AND SCORES IN A MATCH .ALSO WE ARE RETRIVING RUNS BY ENTERING THE PLAYERS NAME
+
+x={}
+n=int(input("enter how many players?"))
+for i in range(n):
+    print("name of the player:",end=" ")
+    k=input()
+    print("score of the player:",end=" ")
+    v=int(input())
+    x.update({k:v})
+print("\n names of players")
+for pname in x.keys():
+    print(pname)
+print("enter the player name:",end=" ")
+name=input()
+runs=x.get(name,-1)
+if (runs==-1):
+    print("no player found")
+else:
+    print("{} made {}.".format(k,v))
+"""
+OUTPUT AND INPUT:
+INPUT:
+
+enter how many players?4
+name of the player: KEERTHI
+score of the player: 99
+name of the player: DHONI
+score of the player: 100
+name of the player: VIRAT
+score of the player: 96
+name of the player: JASU
+score of the player: 101
+
+OUTPUT:
+
+names of players
+KEERTHI
+DHONI
+VIRAT
+JASU
+enter the player name: JASU
+JASU made 101. 
